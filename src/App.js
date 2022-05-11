@@ -1,4 +1,4 @@
-import { ExpenseItem } from "./components/ExpenseItem";
+import { Expenses } from "./components/Expenses";
 
 import "./App.css";
 function App() {
@@ -7,7 +7,7 @@ function App() {
     fontSize:"25px",
     padding:'10px'
   }
-  const Expenses=[
+  const expenses=[
     { 
      
       id:1,
@@ -39,24 +39,7 @@ function App() {
   return (
     <div className="App">
       <div style={Header}>React Expense Tracker</div>
-      <ExpenseItem
-      Title={Expenses[0].title}
-      Date={Expenses[0].date}
-      Amount={Expenses[0].amount}
-      
-      />
-      <ExpenseItem
-      Title={Expenses[1].title}
-      Date={Expenses[1].date}
-      Amount={Expenses[1].amount}
-      
-      />
-      <ExpenseItem
-      Title={Expenses[2].title}
-      Date={Expenses[2].date}
-      Amount={Expenses[2].amount}
-      
-      />
+     <Expenses item={expenses}/>
     </div>
   );
 }
