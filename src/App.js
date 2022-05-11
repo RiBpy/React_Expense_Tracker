@@ -1,6 +1,6 @@
-import { Expenses } from "./components/Expenses";
+import React from 'react';
+import  Expenses  from "./components/Expenses/Expenses";
 
-import "./App.css";
 function App() {
   const Header={
     color:"#fff",

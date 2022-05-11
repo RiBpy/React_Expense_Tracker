@@ -1,10 +1,11 @@
-import React from 'react'
 import "./ExpenseItem.css";
 import { ExpenseDate } from './ExpenseDate';
-import logo from "../assets/logo.png";
-export const ExpenseItem = (props) => { 
+import Card from "../UI/Card"
+import logo from "../../assets/logo.png";
+
+ const ExpenseItem = (props) => { 
   return (
-    <div className='expense-item'>
+    <Card className="expense-item">
         <img src={logo} alt="" />
         <ExpenseDate Date={props.Date}/>
         <div className='expense-item__description'>
@@ -13,6 +14,8 @@ export const ExpenseItem = (props) => {
             {props.Amount}
             </div>
         </div>      
-    </div>
-  )
+    </Card>
+  );
 }
+
+export default ExpenseItem;
