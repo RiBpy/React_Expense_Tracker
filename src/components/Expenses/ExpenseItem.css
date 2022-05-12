@@ -42,7 +42,20 @@
     padding: 0.5rem;
     border-radius: 12px;
   }
-  
+  .expense_new{
+    padding:8px;
+    margin-left:5px;
+    border-radius:5px;
+  }
+  .expense_title_change_button{
+    padding:8px 8px;
+    margin-left:8px;
+    color:white;
+    background: rgb(22, 28, 41);
+    border:1px solid white;
+    border-radius:10px;
+    cursor:pointer;
+  }
   @media (min-width: 580px) {
     .expense-item__description {
       flex-direction: row;
